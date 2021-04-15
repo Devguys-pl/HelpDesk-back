@@ -7,8 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 5.times do |t|
+  user = User.create(email: "mail@mail.mail", name: "Tom")
   new_help_request = HelpRequest.create(
-    user: User.new,
+    user: user,
     topic: "Topic",
     description: "Description"
   )

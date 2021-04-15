@@ -1,4 +1,4 @@
-class HelpRequestController < ApplicationController
+class Api::V1::HelpRequestController < ApplicationController
 
   def index
     render_all_help_requests
