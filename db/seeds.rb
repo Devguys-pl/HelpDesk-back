@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+5.times do |t|
+  new_help_request = HelpRequest.create(
+    user: User.new,
+    topic: "Topic",
+    description: "Description"
+  )
+end
